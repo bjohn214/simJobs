@@ -1,0 +1,18 @@
+Universe = Vanilla
+Executable   = /work/bjohn214/simJobs/runScripts/runfoo.sh 
+Requirements = ( ( HAS_SINGULARITY == TRUE ) && ( HAS_CVMFS_unpacked_cern_ch ) )
++SingularityImage = "/cvmfs/unpacked.cern.ch/registry.hub.docker.com/infnpd/mucoll-ilc-framework:1.6-centos8" 
+Error   = /work/bjohn214/simJobs/outputs/samplefoo.err
+Output  = /work/bjohn214/simJobs/outputs/samplefoo.out
+Log     = /work/bjohn214/simJobs/outputs/samplefoo.log
+Transfer_Input_Files = /work/bjohn214/simJobs/inputFiles,/work/bjohn214/simJobs/submits/samplefoo/sim_steer_jet_foo_CONDOR.py
+should_transfer_files = YES
+WhenToTransferOutput = ON_EXIT
+request_cpus = 2
+request_memory = 5 GB
++ProjectName="snowmass21.futurecolliders"
+Queue 1
+
+
+
+

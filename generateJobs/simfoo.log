@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/cvmfs/ilc.desy.de/key4hep/spackages/dd4hep/1.22/x86_64-centos7-gcc11.2.0-opt/2rnosqhnzbk2lt2lyeety6mz4cqxcilh/bin/ddsim", line 22, in <module>
+    RUNNER.parseOptions()
+  File "/cvmfs/ilc.desy.de/key4hep/spackages/dd4hep/1.22/x86_64-centos7-gcc11.2.0-opt/2rnosqhnzbk2lt2lyeety6mz4cqxcilh/lib/python3.9/site-packages/DDSim/DD4hepSimulation.py", line 145, in parseOptions
+    self.readSteeringFile()
+  File "/cvmfs/ilc.desy.de/key4hep/spackages/dd4hep/1.22/x86_64-centos7-gcc11.2.0-opt/2rnosqhnzbk2lt2lyeety6mz4cqxcilh/lib/python3.9/site-packages/DDSim/DD4hepSimulation.py", line 123, in readSteeringFile
+    exec(compile(open(self.steeringFile).read(), self.steeringFile, 'exec'), globs, locs)
+FileNotFoundError: [Errno 2] No such file or directory: 'inputFiles/sim_steer_jet_foo_CONDOR.py'
