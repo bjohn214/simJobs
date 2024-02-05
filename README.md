@@ -12,7 +12,7 @@ in generateJobs/:
 	steer_gen.sh: Running this generates all the submit and run scripts in their respective folders. takes a hot minute.
 
 inputFiles/: 
-5TeV_pythia8_events.hepmc: gen level sample with 10k events
+input_sim.txt: where the gen level sample should go 
 MuColl_10TeV_v0A: MuCol Geometry .xml files I've been using. Should be able to switch these with any others you've been using. 
 
 To actually submit to condor you can just run submit.sh. And if this messes up and you're left with with a bunch of broken files you can just just remover.sh. This removes any files left in outputs/ submits/ and runScripts/
