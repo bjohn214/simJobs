@@ -24,7 +24,10 @@ In the main geometry file inputFiles/MuColl_10teV_v0A/MuColl_10teV_v0A.xml in li
 	<limitset name="nozzle_limits">
             <limit name="track_length_max" particles="*" value="0.1" unit="mm" />
         </limitset>
-and in the the nozzle .xml file I added: limits="nozzle_limits" in each detector entry: e.g. <detector name="NozzleW_right" type="DD4hep_PolyconeSupport" vis="NozzleWVis" region="NozzleRegion"> on line 17 became  <detector name="NozzleW_right" type="DD4hep_PolyconeSupport" vis="NozzleWVis" region="NozzleRegion" limits="nozzle_limits"> 
+and in the the nozzle .xml file I added: limits="nozzle_limits" in each detector entry: e.g.
+ <detector name="NozzleW_right" type="DD4hep_PolyconeSupport" vis="NozzleWVis" region="NozzleRegion"> 
+on line 17 becam
+e  <detector name="NozzleW_right" type="DD4hep_PolyconeSupport" vis="NozzleWVis" region="NozzleRegion" limits="nozzle_limits"> 
 
 
 -ben Feb. 4 2024
